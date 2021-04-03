@@ -8,22 +8,25 @@
 
     <TextView
         android:id="@+id/temp_desc_tv"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/temporary_description"
-        app:layout_constraintBottom_toTopOf="sign_in_btn"
+        android:textSize="@dimen/font_size_medium"
+        android:scrollbars= "vertical"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        />
 
     <Button
         android:id="@+id/sign_in_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/sign_in"
+        android:onClick="displaySignInActivity"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="temporary_description"
+        app:layout_constraintTop_toBottomOf="@id/temp_desc_tv"
         />
 
     <Button
@@ -31,10 +34,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/report_forms"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:onClick="displayReportFormsActivity"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sign_in_btn"
         />
 
     <Button
@@ -42,10 +45,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/main_menu"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:onClick="displayMainMenuActivity"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/report_forms_btn"
         />
 
     <Button
@@ -53,10 +56,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/settings"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:onClick="displaySettingsActivity"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/main_menu_btn"
         />
 
     <Button
@@ -64,10 +67,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/report_list"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:onClick="displayReportListActivity"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/settings_btn"
         />
 
 

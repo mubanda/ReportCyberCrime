@@ -1,21 +1,12 @@
 <resources>
     <string name="app_name">Report Cyber Crime</string>
-    <string name="temporary_description">
-        This is a temporaray activity so that we can all have our section to
-        work with without depending on someone elses section to vist our own
-        when testing.
-        The reason for this is that lets say we didnt do this
-        it would mean everyone would need depend on someone elses screen
-        to get to theirs when testing so if theyre making changes and lets
-        say they remove their buttons then another person wont be able to
-        get to their section because their are no buttons to get to it. (e.g,
-        the sign in button stops working in the sign in page which is the first
-        page, everyone else working on the main menu/report forms/settings etc
-        would be stuck and unable to test).
+    <string name="temporary_description">This is a TEMPORARY activity so we can
+        all have our section to work with without depending on someone else\'s
+        section to visit our own when testing.
         Once we have all finished as much as we can without depending on each
-        other we'll link it all together and put pages we're they're supposed
-        to be.
-    </string>
+        other we will link it all together and put pages we\'re they\'re supposed
+        to be.</string>
+
     <string name="sign_in">Sign In</string>
     <string name="report_forms">Report Forms</string>
     <string name="main_menu">Main Menu</string>
