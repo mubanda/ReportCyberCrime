@@ -19,6 +19,12 @@
     <string name="education">Education</string>
     <string name="social_media">Social Media</string>
 
+    <string name="user_id">User ID</string>
+    <string name="password">Password</string>
+    <string name="forgot_password">Forgot password ?</string>
+    <string name="create_account">Create account</string>
+    <string name="signIn">Sign in</string>
+
     <string name="subject">Subject</string>
     <string name="location">Location</string>
     <string name="parties_involved">Parties Involved</string>
@@ -29,6 +35,5 @@
     <string name="more_details">More Details</string>
     <string name="upload_evidence">Upload Evidence</string>
     <string name="submit">Submit Report</string>
-
 
 </resources>
