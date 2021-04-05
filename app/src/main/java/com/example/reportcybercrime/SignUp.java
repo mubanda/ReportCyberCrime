@@ -1,28 +1,24 @@
 package com.example.reportcybercrime;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.text.SpannableString;
-import android.text.style.ClickableSpan;
 import android.view.View;
 import android.widget.TextView;
 
-public class SignInActivity extends AppCompatActivity {
-
+public class SignUp extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_sign_in);
+        setContentView(R.layout.activity_sign_up);
 
-        TextView textView = findViewById(R.id.create_account);
+        TextView textView = findViewById(R.id.log_in);
         textView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(SignInActivity.this, SignUp.class);
+                Intent intent = new Intent(SignUp.this, SignInActivity.class);
                 startActivity(intent);
             }
         });
