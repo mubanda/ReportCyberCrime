@@ -19,4 +19,10 @@
     <string name="education">Education</string>
     <string name="social_media">Social Media</string>
 
+    <string name="user_id">User ID</string>
+    <string name="password">Password</string>
+    <string name="forgot_password">Forgot password ?</string>
+    <string name="create_account">Create account</string>
+    <string name="signIn">Sign in</string>
+
 </resources>
