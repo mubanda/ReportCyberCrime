@@ -25,13 +25,13 @@
     <string name="create_account">Create account</string>
     <string name="signIn">Sign in</string>
 
-    <string name="subject">Subject</string>
-    <string name="location">Location</string>
+    <string name="incident_category">Incident Category</string>
+    <string name="incident_location">Incident Location</string>
     <string name="parties_involved">Parties Involved</string>
-    <string name="which_education_institute">Which Education Institute?</string>
+    <string name="name_of_educational_institute">Name of Educational Institute</string>
     <string name="devices_involved">Devices Involved</string>
-    <string name="date">Date</string>
-    <string name="time">Time</string>
+    <string name="date_with_hint">Date (DD-MM-YYYY)</string>
+    <string name="time_with_hint">Time (HH:MM)</string>
     <string name="more_details">More Details</string>
     <string name="upload_evidence">Upload Evidence</string>
     <string name="submit">Submit Report</string>
