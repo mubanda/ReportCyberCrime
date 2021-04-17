@@ -11,12 +11,10 @@ public class ReportFormsActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_report_forms);
+        setContentView(R.layout.activity_select_sector);
     }
 
     public void displayFinanceActivity(View view){
-        Intent intent = new Intent(this, FinanceActivity.class);
-        startActivity(intent);
     }
 
     public void displayEducationActivity(View view){
@@ -25,7 +23,5 @@ public class ReportFormsActivity extends AppCompatActivity {
     }
 
     public void displaySocialMediaActivity(View view){
-        Intent intent = new Intent(this, SocialMediaActivity.class);
-        startActivity(intent);
     }
 }

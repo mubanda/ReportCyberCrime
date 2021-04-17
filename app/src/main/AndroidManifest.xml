@@ -11,8 +11,6 @@
         android:theme="@style/Theme.ReportCyberCrime">
         <activity android:name=".SignUp"></activity>
         <activity android:name=".EducationActivity" />
-        <activity android:name=".SocialMediaActivity" />
-        <activity android:name=".FinanceActivity" />
         <activity android:name=".ReportListActivity" />
         <activity android:name=".SettingsActivity" />
         <activity android:name=".MainMenuActivity" />

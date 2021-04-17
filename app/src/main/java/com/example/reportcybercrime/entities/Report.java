@@ -5,11 +5,13 @@ import java.util.HashMap;
 
 public class Report {
     private Integer reportID;
-    private String incidentCategory;
-    private String incidentLocation;
+    //Unauthorised Access (Outsider), Malware, Outage, Inappropiate Access (Insider), Espionage, Data Breach, Other (decribe)
+    private String crimeCategory;
+    private String crimeLocation;
     private ArrayList<String> partiesInvolved;
     private ArrayList<String> devicesInvolved;
     private Integer date;
     private Integer time;
-    private HashMap Evidence;
+    private HashMap evidence;
+    private String referenceCode;
 }

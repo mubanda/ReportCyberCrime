@@ -32,31 +32,21 @@
 
 
             <TextView
-                android:id="@+id/category"
+                android:id="@+id/category_tv"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/incident_category"
+                android:text="@string/crime_category"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintBottom_toTopOf="@id/location_til" />
+                app:layout_constraintBottom_toTopOf="@id/category_spinner" />
 
 
-            <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/location_til"
+            <Spinner
+                android:id="@+id/category_spinner"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:hint="@string/incident_location"
-                app:boxBackgroundColor="#FFFFFF"
-                app:boxBackgroundMode="outline"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/category">
-
-                <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:inputType="text"
-                    android:maxLines="1"/>
-            </com.google.android.material.textfield.TextInputLayout>
+                app:layout_constraintTop_toBottomOf="@id/category_tv" />
 
 
             <TextView
@@ -65,7 +55,8 @@
                 android:layout_height="wrap_content"
                 android:text="@string/parties_involved"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/location_til" />
+                tools:layout_editor_absoluteY="110dp"
+                app:layout_constraintTop_toBottomOf="@id/category_spinner" />
 
             <Spinner
                 android:id="@+id/parties_spinner"
@@ -144,7 +135,7 @@
                 android:id="@+id/details_til"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:hint="@string/more_details"
+                android:hint="@string/description"
                 app:boxBackgroundColor="#FFFFFF"
                 app:boxBackgroundMode="outline"
                 app:layout_constraintEnd_toEndOf="parent"
