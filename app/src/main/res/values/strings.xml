@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">Report Cyber Crime</string>
-    <string name="back_btn">Back</string>
 
     <string name="temporary_description">This is a TEMPORARY activity so we can
         all have our section to work with without depending on someone else\'s
@@ -26,6 +25,8 @@
     <string name="forgot_password">Forgot password ?</string>
     <string name="create_account">Create account</string>
     <string name="signIn">Sign in</string>
+
+    <string name="back">Back</string>
 
     <string name="crime_category">Category of Crime</string>
     <string name="crime_location">Location of Crime</string>

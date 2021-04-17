@@ -8,16 +8,20 @@
     android:padding="10dp"
     tools:context=".ReportFormsActivity">
 
-    <Button
+    <ImageButton
         android:id="@+id/back_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:gravity="center|start"
-        android:onClick="displayFinanceActivity"
-        android:text="@string/back_btn"
-        android:textAppearance="@style/TextAppearance.AppCompat.Button"
-        android:minHeight="0dp"
+        android:contentDescription="@string/back"
         android:minWidth="0dp"
+        android:minHeight="0dp"
+        android:padding="0dp"
+        android:layout_margin="0dp"
+        android:src="@drawable/baseline_arrow_back_24"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:background="@null"
+        style="?android:attr/borderlessButtonStyle"
         />
 
     <TextView
