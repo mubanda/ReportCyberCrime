@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void displayReportFormsActivity(View view){
-        Intent intent = new Intent(this, ReportFormsActivity.class);
+        Intent intent = new Intent(this, SelectSectorsActivity.class);
         startActivity(intent);
     }
 

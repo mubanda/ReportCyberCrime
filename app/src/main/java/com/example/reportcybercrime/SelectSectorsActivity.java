@@ -6,7 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class ReportFormsActivity extends AppCompatActivity {
+public class SelectSectorsActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -15,13 +15,23 @@ public class ReportFormsActivity extends AppCompatActivity {
     }
 
     public void displayFinanceActivity(View view){
+        Intent intent = new Intent(this, ReportFormActivity.class);
+        startActivity(intent);
+
     }
 
     public void displayEducationActivity(View view){
-        Intent intent = new Intent(this, EducationActivity.class);
+        Intent intent = new Intent(this, ReportFormActivity.class);
         startActivity(intent);
     }
 
     public void displaySocialMediaActivity(View view){
+        Intent intent = new Intent(this, ReportFormActivity.class);
+        startActivity(intent);
+    }
+
+    public void goBack(View view) {
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
     }
 }

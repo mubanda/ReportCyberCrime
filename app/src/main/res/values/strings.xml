@@ -28,15 +28,27 @@
 
     <string name="back">Back</string>
 
+    <string name="fill_out_the_form">Fill Out the Form</string>
+    <string name="report_form_sub_header">Please fill out the form detailing the cyber crime you\'ve witnessed in the <b>Education</b> sector.</string>
+
+    <string name="education_sub_header">Educational Institute Details</string>
+    <string name="name">Name</string>
+    <string name="city">City</string>
+    <string name="postcode">Postcode</string>
+
+    <string name="general_sub_header">Incident Details</string>
     <string name="crime_category">Category of Crime</string>
-    <string name="crime_location">Location of Crime</string>
     <string name="parties_involved">Parties Involved</string>
-    <string name="name_of_educational_institute">Name of Educational Institute</string>
-    <string name="devices_involved">Devices Involved</string>
     <string name="date_with_hint">Date (DD-MM-YYYY)</string>
     <string name="time_with_hint">Time (HH:MM)</string>
+    <string name="devices_involved">Devices Involved</string>
     <string name="description">Description</string>
+
     <string name="upload_evidence">Upload Evidence</string>
+    <string name="upload_evidence_caption">Attach any evidence that will help the investigation of this cyber crime.</string>
+
+
     <string name="submit">Submit Report</string>
+
 
 </resources>

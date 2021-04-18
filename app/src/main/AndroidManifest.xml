@@ -10,11 +10,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ReportCyberCrime">
         <activity android:name=".SignUp"></activity>
-        <activity android:name=".EducationActivity" />
+        <activity android:name=".ReportFormActivity" />
         <activity android:name=".ReportListActivity" />
         <activity android:name=".SettingsActivity" />
         <activity android:name=".MainMenuActivity" />
-        <activity android:name=".ReportFormsActivity" />
+        <activity android:name=".SelectSectorsActivity" />
         <activity android:name=".SignInActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
