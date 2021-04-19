@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp"
+    tools:context=".SelectRoleActivity">
+
+    <ImageButton
+        android:id="@+id/back_btn"
+        android:contentDescription="@string/back"
+        style="@style/NoRippleBackButton"
+        />
+
+    <TextView
+        android:id="@+id/title_tv"
+        android:text="@string/select_sector"
+        style="@style/ScreenTitle"
+        />
+
+    <TextView
+        android:id="@+id/title_caption_tv"
+        android:text="@string/select_sector_sub_header"
+        style="@style/ScreenTitleCaption"
+        />
+
+
+</LinearLayout>
