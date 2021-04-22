@@ -14,7 +14,19 @@
     <string name="settings">Settings</string>
     <string name="report_list">Report List</string>
 
-    <string name="select_sector">Select Sector</string>
+
+    <string name="select_role">1. Select Role</string>
+    <string name="select_role_sub_header">Please select a role below which best describes who you are</string>
+    <string name="victim">Victim</string>
+    <string name="business">Business</string>
+    <string name="witness">Witness</string>
+
+
+    <string name="role_sub_header">Your Role</string>
+    <string name="role_caption">Please select a role below which best describes who you are</string>
+
+
+    <string name="select_sector">1. Select Sector</string>
     <string name="select_sector_sub_header">Please select a sector below in which the cybercrime took place</string>
     <string name="finance">Finance</string>
     <string name="education">Education</string>
@@ -27,35 +39,75 @@
     <string name="signIn">Sign in</string>
 
     <string name="back">Back</string>
+    <string name="required">*Required</string>
+    <string name="optional">*Optional</string>
 
-    <string name="fill_out_the_form">Fill Out the Form</string>
-    <string name="report_form_sub_header">Please fill out the form detailing the cyber crime you\'ve witnessed in <b>Education</b>.</string>
+
+    <string name="fill_out_the_form">2. Fill Out the Form</string>
+    <string name="report_form_sub_header">Please fill out the form detailing the cyber crime you\'ve experienced in <b>Education</b>.</string>
+    <string name="select_prompt">- Select -</string>
+    <string name="role">Role</string>
 
     <string name="education_sub_header">Educational Institute Details</string>
+    <string name="finance_sub_header">Financial Institute Details</string>
     <string name="name">Name</string>
     <string name="city">City</string>
     <string name="postcode">Postcode</string>
 
-    <string name="finance_sub_header">Financial Information</string>
 
     <string name="social_media_sub_header">Social Media Details</string>
-    <string name="social_media_name">Name of Social Media</string>
-    <string name="suspect_username">Suspect Username</string>
-    <string name="suspect_profile_link">Suspect Profile Link</string>
+    <string name="social_media_name">Name of Platform</string>
+
+    <string name="suspect_sub_header">Suspect Details</string>
+    <string name="suspect_type">Person/Group</string>
+    <string name="suspect_caption">Details on the person/group you believe commit the cyber crime.</string>
+    <!--Suspect-->
+    <string name="suspect_name">Suspect\'s Name or Alias</string>
+    <string name="suspect_description">Description</string>
+    <!--Suspect Social Media-->
+    <string name="suspect_username">Username</string>
+    <string name="suspect_profile_link">Profile Link</string>
+
 
     <string name="general_sub_header">Incident Details</string>
     <string name="crime_category">Category of Crime</string>
     <string name="parties_involved">Parties Involved</string>
-    <string name="date_with_hint">Date (DD-MM-YYYY)</string>
-    <string name="time_with_hint">Time (HH:MM)</string>
+    <string name="date">Date</string>
+    <string name="date_helper_text">Format: DD-MM-YYYY</string>
+    <string name="time">Time</string>
+    <string name="time_helper_text">Format: HH:MM</string>
     <string name="devices_involved">Devices Involved</string>
     <string name="description">Description</string>
 
     <string name="upload_evidence">Upload Evidence</string>
+    <string name="image">Image</string>
+    <string name="video">Video</string>
+    <string name="file">Image</string>
+
     <string name="upload_evidence_caption">Please upload any evidence that will help the investigation of this cyber crime.</string>
+
+    <string name="track_report">Track Report Anonymously\n(via a Reference Code)</string>
+    <string name="save_report">Save Report</string>
 
 
     <string name="submit">Submit Report</string>
+
+
+    <string name="confirm">3. Confirm</string>
+    <string name="confirm_sub_header">Are you sure you want to submit the following form?</string>
+
+    <string name="your_report">Your Report</string>
+
+    <string name="yes_submit">Yes, Submit Report</string>
+
+
+    <string name="submission_successful">Report submission successful!</string>
+    <string name="title_caption">Please store this <b>reference code</b>, used to anonymously track the report, somewhere because it will be the only time you see it.</string>
+
+
+    <string name="sample_refcode">A8IT</string>
+    <string name="refcode_caption">This code will allow you to anonymously track the report you\'ve submitted.</string>
+    <string name="finish">Finish</string>
 
 
 </resources>

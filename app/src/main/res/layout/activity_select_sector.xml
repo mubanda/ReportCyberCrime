@@ -27,35 +27,26 @@
         style="@style/ScreenTitleCaption"
         />
 
-
     <Button
         android:id="@+id/finance_btn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center|start"
-        android:onClick="displayFinanceActivity"
         android:text="@string/finance"
-        android:textAppearance="@style/TextAppearance.AppCompat.Button"
         android:layout_marginTop="0dp"
+        style="@style/LongNavigationButton"
+        android:onClick="financeBtnClicked"
         />
 
     <Button
         android:id="@+id/education_btn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center|start"
-        android:onClick="displayEducationActivity"
         android:text="@string/education"
-        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        style="@style/LongNavigationButton"
+        android:onClick="educationBtnClicked"
         />
 
     <Button
         android:id="@+id/social_media_btn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center|start"
-        android:onClick="displaySocialMediaActivity"
         android:text="@string/social_media"
-        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        style="@style/LongNavigationButton"
+        android:onClick="socialMediaBtnClicked"
+
         />
 </LinearLayout>

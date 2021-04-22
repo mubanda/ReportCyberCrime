@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ReferenceCodeActivity"
+    android:orientation="vertical"
+    android:padding="15dp"
+    >
+
+    <TextView
+        android:id="@+id/title_tv"
+        android:text="@string/submission_successful"
+        style="@style/ScreenTitle"
+        />
+    <TextView
+        android:id="@+id/title_caption_tv"
+        android:text="@string/title_caption"
+        style="@style/ScreenTitleCaption"
+        android:layout_marginBottom="0dp"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        android:orientation="vertical"
+        android:gravity="top"
+        android:layout_marginTop="0dp"
+        >
+
+        <TextView
+            android:id="@+id/refcode_tv"
+            style="@style/ScreenTitle"
+            android:gravity="top|center"
+            android:text="@string/sample_refcode"
+            android:textSize="130sp" />
+
+    </ScrollView>
+
+
+
+    <Button
+        android:id="@+id/finishBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/finish"
+        android:onClick="finishBtnClicked"
+        />
+
+</LinearLayout>

@@ -8,30 +8,43 @@ import android.view.View;
 
 public class SelectSectorsActivity extends AppCompatActivity {
 
+    String chosenSector;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_select_sector);
     }
 
-    public void displayFinanceActivity(View view){
-        Intent intent = new Intent(this, ReportFormActivity.class);
-        startActivity(intent);
-
-    }
-
-    public void displayEducationActivity(View view){
-        Intent intent = new Intent(this, ReportFormActivity.class);
-        startActivity(intent);
-    }
-
-    public void displaySocialMediaActivity(View view){
-        Intent intent = new Intent(this, ReportFormActivity.class);
-        startActivity(intent);
-    }
-
     public void goBack(View view) {
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
     }
+
+
+
+    public void financeBtnClicked(View view){
+        chosenSector = "FINANCE";
+
+        Intent intent = new Intent(this, ReportFormActivity.class);
+        intent.putExtra("chosenSector", this.chosenSector);
+        startActivity(intent);
+    }
+
+    public void educationBtnClicked(View view){
+        chosenSector = "EDUCATION";
+
+        Intent intent = new Intent(this, ReportFormActivity.class);
+        intent.putExtra("chosenSector", this.chosenSector);
+        startActivity(intent);
+    }
+
+    public void socialMediaBtnClicked(View view){
+        this.chosenSector = "SOCIAL_MEDIA";
+
+        Intent intent = new Intent(this, ReportFormActivity.class);
+        intent.putExtra("chosenSector", this.chosenSector);
+        startActivity(intent);
+    }
+
 }

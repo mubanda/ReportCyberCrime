@@ -50,7 +50,50 @@
             android:orientation="vertical">
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/education_card_view"
+                android:id="@+id/role_card_view"
+                style="@style/FormCard">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/role_header_tv"
+                        android:text="@string/role_sub_header"
+                        style="@style/FormHeader"
+                        />
+
+                    <TextView
+                        android:id="@+id/role_caption_tv"
+                        android:text="@string/role_caption"
+                        style="@style/FormPrompt"
+                        />
+
+                    <!--Dropdown-->
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/role_menu"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <AutoCompleteTextView
+                            android:id="@+id/role_text_view"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/role"
+                            android:inputType="none"
+                            />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/edu_fin_card_view"
                 style="@style/FormCard">
 
                 <LinearLayout
@@ -60,6 +103,11 @@
                     <TextView
                         android:id="@+id/educational_details_header_tv"
                         android:text="@string/education_sub_header"
+                        style="@style/FormHeader"
+                        />
+                    <TextView
+                        android:id="@+id/financial_details_header_tv"
+                        android:text="@string/finance_sub_header"
                         style="@style/FormHeader"
                         />
 
@@ -115,6 +163,133 @@
 
             </androidx.cardview.widget.CardView>
 
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/social_media_card_view"
+                style="@style/FormCard">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/social_media_header_tv"
+                        android:text="@string/social_media_sub_header"
+                        style="@style/FormHeader"
+                        />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/name_of_platform_til"
+                        android:hint="@string/social_media_name"
+                        style="@style/FormTextInput"
+                        >
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="textShortMessage|text" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/suspect_card_view"
+                style="@style/FormCard">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/suspect_header_tv"
+                        android:text="@string/suspect_sub_header"
+                        style="@style/FormHeader"
+                        />
+
+                    <TextView
+                        android:id="@+id/suspect_caption_tv"
+                        android:text="@string/suspect_caption"
+                        style="@style/FormPrompt"
+                        />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/suspect_type_menu"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <AutoCompleteTextView
+                            android:id="@+id/suspect_type_text_view"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/suspect_type"
+                            android:inputType="none"
+                            />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/suspect_name_til"
+                        android:hint="@string/suspect_name"
+                        style="@style/FormTextInput"
+                        >
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="textShortMessage|text" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/suspect_description_til"
+                        android:hint="@string/suspect_description"
+                        style="@style/FormTextInput"
+                        android:layout_weight="1"
+                        >
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="textMultiLine"
+                            android:maxLines="13"
+                            android:minLines="5" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/suspect_username_til"
+                        android:hint="@string/suspect_username"
+                        style="@style/FormTextInput"
+                        >
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="textShortMessage|text" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/suspect_profile_til"
+                        android:hint="@string/suspect_profile_link"
+                        style="@style/FormTextInput"
+                        >
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="textShortMessage|text" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
             <androidx.cardview.widget.CardView
                 android:id="@+id/general_card_view"
                 style="@style/FormCard"
@@ -130,16 +305,22 @@
                         style="@style/FormHeader"
                         />
 
-                    <TextView
-                        android:id="@+id/category_tv"
-                        android:text="@string/crime_category"
-                        style="@style/FormPrompt"
-                        />
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/category_menu"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
 
-                    <Spinner
-                        android:id="@+id/category_spinner"
-                        style="@style/FormSpinner"
-                        />
+                        <AutoCompleteTextView
+                            android:id="@+id/category_text_view"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/crime_category"
+                            android:inputType="none"
+                            />
+
+                    </com.google.android.material.textfield.TextInputLayout>
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -148,13 +329,14 @@
 
                         <com.google.android.material.textfield.TextInputLayout
                             android:id="@+id/date_til"
-                            android:hint="@string/date_with_hint"
+                            android:hint="@string/date"
                             style="@style/FormTextInput"
                             android:layout_weight="0.5"
                             android:layout_marginRight="4dp"
                             >
 
                             <EditText
+                                android:id="@+id/date_edit_text"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:inputType="date|text" />
@@ -162,13 +344,15 @@
 
                         <com.google.android.material.textfield.TextInputLayout
                             android:id="@+id/time_til"
-                            android:hint="@string/time_with_hint"
+                            android:hint="@string/time"
                             style="@style/FormTextInput"
                             android:layout_weight="0.5"
                             android:layout_marginLeft="4dp"
+                            app:helperText="@string/optional"
                             >
 
                             <EditText
+                                android:id="@+id/time_edit_text"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:inputType="text|time" />
@@ -201,7 +385,6 @@
             <androidx.cardview.widget.CardView
                 android:id="@+id/evidence_card_view"
                 style="@style/FormCard"
-                android:layout_marginBottom="20dp"
                 >
 
                 <LinearLayout
@@ -235,6 +418,39 @@
 
             </androidx.cardview.widget.CardView>
 
+            <androidx.cardview.widget.CardView
+                android:id="@+id/post_submission_card_view"
+                style="@style/FormCard"
+                android:layout_marginBottom="20dp"
+                >
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.switchmaterial.SwitchMaterial
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:checked="true"
+                        android:text="@string/save_report"
+                        android:textSize="15sp"
+                        />
+
+                    <com.google.android.material.switchmaterial.SwitchMaterial
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:checked="true"
+                        android:text="@string/track_report"
+                        android:textSize="15sp"
+                        />
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
 
         </androidx.appcompat.widget.LinearLayoutCompat>
 
@@ -250,6 +466,7 @@
         android:layout_marginTop="15dp"
         android:layout_marginStart="15dp"
         android:layout_marginEnd="15dp"
+        android:onClick="submitBtnClicked"
         />
 
 
